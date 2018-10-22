@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/inTheatresNowFragment">
+
+    <fragment
+        android:id="@+id/inTheatresNowFragment"
+        android:name="com.example.phundal2091.mymovies.views.InTheatresNowFragment"
+        android:label="InTheatresNowFragment"
+        tools:layout="@layout/in_theatres_now_fragment"/>
+    <fragment
+        android:id="@+id/upcomingMoviesFragment"
+        android:name="com.example.phundal2091.mymovies.views.UpcomingMoviesFragment"
+        android:label="UpcomingMoviesFragment"
+        tools:layout="@layout/upcoming_movies_fragment"/>
+    <fragment
+        android:id="@+id/searchMoviesFragment"
+        android:name="com.example.phundal2091.mymovies.views.SearchMoviesFragment"
+        android:label="SearchMoviesFragment"
+        tools:layout="@layout/search_movies_fragment"/>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.phundal2091.mymovies.views.MainActivity"
+        android:label="MainActivity"
+        tools:layout="@layout/activity_main"/>
+</navigation>
