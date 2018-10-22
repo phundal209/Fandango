@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitBuildr {
 
-    val base_url = "http://api.rottentomatoes.com/api/public/v1.0"
+    val base_url = "http://api.rottentomatoes.com/api/public/v1.0/"
 
     fun buildRetrofit() : Retrofit{
         val gson = GsonBuilder().setLenient().create()

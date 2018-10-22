@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movieTitle"
+            android:textAlignment="center"
+            tools:text="Fantastic Beasts and Where to Find Them"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"
+            android:id="@+id/thumbnail"
+            tools:src="@mipmap/ic_launcher"
+            android:layout_below="@+id/movieTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movieCritics"
+            tools:text="Certified Fresh : 77"
+            android:layout_below="@+id/thumbnail"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movieRating"
+            tools:text="PG-13"
+            android:layout_below="@+id/movieCritics"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/synopsis"
+            tools:text="The magic of Harry Potter lives on in this Warner Bros. spin-off penned by {J.K. Rowling}, and intended as the first chapter in a whole new fantasy film franchise."
+            android:layout_below="@+id/movieRating"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
